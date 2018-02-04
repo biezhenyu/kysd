@@ -1,0 +1,46 @@
+@import "../less/bass.less";
+.slider {
+  min-height: 1px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.slider-group {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.dots {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0px;
+  .h(35);
+  text-align: center;
+  font-size: 0;
+  background-image: linear-gradient(0deg,
+  rgba(245, 239, 237, 0.3) 0%,
+  rgba(123, 120, 119, 0.3) 0%,
+  rgba(0, 0, 0, 0.3) 0%,
+  rgba(128, 128, 128, 0.3) 64%,
+  rgba(255, 255, 255, 0.3) 100%),
+  linear-gradient(
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.3));
+  background-blend-mode: normal,
+  normal;
+}
+.dot {
+  display: inline-block;
+  margin: 0 4px;
+  .mt(20);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff;
+}
+.active {
+  width: 20px;
+  border-radius: 5px;
+  background: @color-background;
+}

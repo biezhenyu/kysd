@@ -1,0 +1,79 @@
+<div class="content" [class.resize]="static">
+  <h2 class="title">{{content.title}}</h2>
+  <div class="info">
+    <span>{{content.time}}</span><span>{{content.name}}</span><span>{{'康养速递'}}</span>
+  </div>
+  <!-- 肺心病专栏 -->
+  <div *ngIf="contentId===0">
+    <div class="session">
+      <p class="special" style="line-height: 22px; text-indent: 2em;">{{content.text1}}</p>
+    </div>
+    <p class="desc" style=""><b style="color: rgb(172, 29, 16);">1、肺心病是一种很危险的疾病，</b>{{content.con1}}</p>
+    <p class="desc" style=""><b style="color: rgb(172, 29, 16);">2、肺心病继续恶化发现就会导致肺功能不全。</b>{{content.con2}}</p>
+    <p class="desc" style=""><b style="color: rgb(172, 29, 16);">3、有了肺心病的一定要十分的重视，</b>{{content.con3}}</p>
+    <p class="desc" style="color: rgb(172, 29, 16);">{{content.con4}}</p>
+    <p class="desc">{{content.con5}}</p>
+    <p class="desc">{{content.con6}}</p>
+  </div>
+  <div *ngIf="contentId===1">
+    <h3 class="title5" style="text-align: left; margin-top: 15px; background: #a3d1a9; color: #ffffff; padding: 5px 0;">{{content.titlep1}}</h3>
+    <p class="desc" style="">{{content.con1}}</p>
+    <p class="desc" style="">{{content.con2}}</p>
+    <p class="desc" style="">{{content.con3}}</p>
+    <h3 class="title5" style="text-align: left; margin-top: 15px; background: #a3d1a9; color: #ffffff; padding: 5px 0;">{{content.titlep2}}</h3>
+    <p class="desc" style="">{{content.con4}}</p>
+    <p class="desc" style="">{{content.con5}}</p>
+    <h3 class="title5" style="text-align: left; margin-top: 15px; background: #a3d1a9; color: #ffffff; padding: 5px 0;">{{content.titlep3}}</h3>
+    <p class="desc" style="">{{content.con6}}</p>
+    <h3 class="title5" style="text-align: left; margin-top: 15px; background: #a3d1a9; color: #ffffff; padding: 5px 0;">{{content.titlep4}}</h3>
+    <p class="desc" style="">{{content.con7}}</p>
+  </div>
+  <div *ngIf="contentId===2">
+    <div class="summary" style="text-indent: 2em;">
+      <span class="summarydesc" style="text-indent: 0;">文章摘要</span>
+      {{content.summary}}
+    </div>
+    <img class="icon" [src]="content.imgurl1" style="margin-top: 8px;" />
+    <h3 class="title5" style="text-align: left; margin-top: 15px;">{{content.title1}}</h3>
+    <p class="desc">{{content.con1}}</p>
+    <p class="desc">{{content.con2}}</p>
+    <p class="desc">{{content.con3}}</p>
+    <p class="desc">{{content.con4}}</p>
+  </div>
+  <div *ngIf="contentId===3">
+    <img class="icon" [src]="content.imgurl" style="margin-top: 8px;" />
+  </div>
+  <div *ngIf="contentId===4">
+    <div class="summary" style="text-indent: 2em; line-height: 20px;">
+      <span class="summarydesc" style="text-indent: 0;">文章摘要</span>
+      {{content.summary}}
+    </div>
+    <h3 class="title5" style="text-align: left; margin-top: 15px; color: rgb(235, 103, 148);">{{content.title1}}</h3>
+    <p class="desc">{{content.con1}}</p>
+    <h3 class="title5" style="text-align: left; margin-top: 15px; color: rgb(235, 103, 148);">{{content.title2}}</h3>
+    <p class="desc">{{content.con2}}</p>
+    <h3 class="title5" style="text-align: left; margin-top: 15px; color: rgb(235, 103, 148);">{{content.title3}}</h3>
+    <p class="desc">{{content.con3}}</p>
+    <h3 class="title5" style="text-align: left; margin-top: 15px; color: rgb(235, 103, 148);">{{content.title4}}</h3>
+    <p class="desc">{{content.con4}}</p>
+  </div>
+  <div *ngIf="contentId===5">
+    <h3 class="title5" style="text-align: left; margin-top: 15px; color: rgb(227, 108, 9);">{{content.title1}}</h3>
+    <div class="desc" style="text-indent: 0;"><b style="font-weight: bold; color: rgb(227, 108, 9);">1、</b>{{content.con1}}</div>
+    <div class="desc" style="text-indent: 0;"><b style="font-weight: bold; color: rgb(227, 108, 9);">2、</b>{{content.con2}}</div>
+    <h3 class="title5" style="text-align: left; margin-top: 15px; color: rgb(227, 108, 9);">{{content.title2}}</h3>
+    <div class="desc" style="text-indent: 0;"><b style="font-weight: bold; color: rgb(227, 108, 9);">1、</b>{{content.con3}}</div>
+    <div class="desc" style="text-indent: 0;"><b style="font-weight: bold; color: rgb(227, 108, 9);">2、</b>{{content.con4}}</div>
+    <div class="desc" style="text-indent: 0;"><b style="font-weight: bold; color: rgb(227, 108, 9);">3、</b>{{content.con5}}</div>
+    <div class="desc" style="text-indent: 0;"><b style="font-weight: bold; color: rgb(227, 108, 9);">4、</b>{{content.con6}}</div>
+    <div class="desc" style="text-indent: 0;"><b style="font-weight: bold; color: rgb(227, 108, 9);">5、</b>{{content.con7}}</div>
+    <div class="desc" style="text-indent: 0;"><b style="font-weight: bold; color: rgb(227, 108, 9);">6、</b>{{content.con8}}</div>
+    <div class="desc" style="text-indent: 0;"><b style="font-weight: bold; color: rgb(227, 108, 9);">7、</b>{{content.con9}}</div>
+    <div class="desc" style="text-indent: 0;"><b style="font-weight: bold; color: rgb(227, 108, 9);">8、</b>{{content.con10}}</div>
+    <div class="desc" style="text-indent: 0;"><b style="font-weight: bold; color: rgb(227, 108, 9);">9、</b>{{content.con11}}</div>
+    <div class="desc" style="text-indent: 0;"><b style="font-weight: bold; color: rgb(227, 108, 9);">10、</b>{{content.con12}}</div>
+    <div class="desc" style="text-indent: 0;"><b style="font-weight: bold; color: rgb(227, 108, 9);">11、</b>{{content.con13}}</div>
+  </div>
+
+</div>
+

@@ -1,0 +1,239 @@
+<div class="content" [class.resize]="static">
+  <h2 class="title">{{content.title}}</h2>
+  <div class="info">
+    <span>{{content.time}}</span><span>{{content.name}}</span><span>{{'康养速递'}}</span>
+  </div>
+  <!-- 脑梗专栏 -->
+  <div *ngIf="contentId===0 && id === 0">
+    <img class="icon" [src]="content.img2 && content.img2" />
+    <p class="desc">{{content.con && content.con}}</p>
+    <img class="icon" [src]="content.img3" />
+    <h3 class="title2"><span>{{content.title2}}</span></h3>
+    <p class="desc">{{content.con2}}</p>
+    <img class="icon" [src]="content.img4" />
+    <p class="desc">{{content.con3}}</p>
+    <p class="desc">{{content.con4}}</p>
+    <img class="icon" [src]="content.img5" />
+    <p class="desc">{{content.con5}}</p>
+    <p class="desc">{{content.con6}}</p>
+    <p class="desc">{{content.con7}}</p>
+    <h3 class="title2"><span>{{content.title3}}</span></h3>
+    <p class="desc">{{content.con8}}</p>
+    <p class="desc">{{content.con9}}</p>
+    <p class="desc">{{content.con10}}</p>
+    <p class="desc">{{content.con11}}</p>
+    <p class="desc">{{content.con12}}</p>
+    <img class="icon" [src]="content.img6" />
+    <p class="title3 title4"><span>{{content.title4}}</span></p>
+    <p class="desc">{{content.con13}}</p>
+    <p class="title3"><span>{{content.title5}}</span></p>
+    <p class="desc">{{content.con14}}</p>
+    <p class="desc">{{content.con15}}</p>
+    <p class="desc">{{content.con16}}</p>
+    <p class="desc">{{content.con17}}</p>
+    <img class="icon" [src]="content.img7" />
+    <p class="title3"><span>{{content.title5}}</span></p>
+    <p class="desc">{{content.con18}}</p>
+    <p class="title3 title4"><span>{{content.title6}}</span></p>
+    <p class="desc">{{content.con19}}</p>
+    <img class="icon" [src]="content.img8" />
+    <p class="desc">{{content.con20}}</p>
+    <p class="desc">{{content.con21}}</p>
+  </div>
+  <div *ngIf="contentId===1 && id === 0">
+    <div class="session">
+      <p class="special">{{content.text1}}</p>
+      <p class="special">{{content.text2}}</p>
+      <p class="special">{{content.text3}}</p>
+    </div>
+    <img class="icon" [src]="content.imgurl1" />
+    <img class="icon" [src]="content.imgurl2" />
+    <img class="icon" [src]="content.imgurl3" />
+    <img class="icon" [src]="content.imgurl4" />
+    <img class="icon" [src]="content.imgurl5" />
+    <img class="icon" [src]="content.imgurl6" />
+    <img class="icon" [src]="content.imgurl7" />
+  </div>
+  <div *ngIf="contentId===2 && id === 0">
+    <div class="summary">
+      <span class="summarydesc">福来科技导语</span>
+      {{content.summary}}
+    </div>
+    <p class="desc">{{content.con1 && content.con1}}</p>
+    <p class="desc">{{content.con2 && content.con2}}</p>
+    <h3 class="title5">{{content.titlep}}</h3>
+    <img class="icon" [src]="content.imgurl1" />
+    <p class="title3 zytitle3"><span>{{content.titlec1}}</span></p>
+    <p class="desc">{{content.con3}}</p>
+    <p class="title3 zytitle3"><span>{{content.titlec2}}</span></p>
+    <p class="desc">{{content.con4}}</p>
+    <p class="title3 zytitle3"><span>{{content.titlec3}}</span></p>
+    <p class="desc">{{content.con5}}</p>
+    <h3 class="title5">{{content.titlep2}}</h3>
+    <p class="title3 zytitle3"><span>{{content.titlec4}}</span></p>
+    <p class="desc">{{content.con6}}</p>
+    <p class="title3 zytitle3"><span>{{content.titlec5}}</span></p>
+    <p class="desc">{{content.con7}}</p>
+    <p class="title3 zytitle3"><span>{{content.titlec6}}</span></p>
+    <img class="icon" [src]="content.imgurl2" />
+    <img class="icon" [src]="content.imgurl3" />
+    <h3 class="title5" style="margin-top: 6px; margin-bottom: 15px;">{{content.titlep3}}</h3>
+    <p class="desc">{{content.con8}}</p>
+    <h3 class="title5" style="margin-top: 6px; margin-bottom: 15px;">{{content.titlep4}}</h3>
+    <p class="desc">{{content.con9}}</p>
+    <p class="desc">{{content.con10}}</p>
+    <h3 class="title5" style="margin-top: 6px; margin-bottom: 15px;">{{content.titlep5}}</h3>
+    <img class="icon" [src]="content.imgurl4" />
+    <p class="desc">{{content.con11}}</p>
+    <p class="desc">{{content.con12}}</p>
+    <p class="title3 zytitle3"><span>{{content.titlec7}}</span></p>
+    <p class="desc">{{content.con13}}</p>
+    <p class="desc">{{content.con14}}</p>
+    <p class="desc">{{content.con15}}</p>
+    <p class="title3 zytitle3"><span>{{content.titlec8}}</span></p>
+    <p class="desc">{{content.con16}}</p>
+    <p class="desc">{{content.con17}}</p>
+    <p class="desc">{{content.con18}}</p>
+    <h3 class="title5" style="margin-top: 6px; margin-bottom: 15px;">{{content.titlep6}}</h3>
+    <p class="desc">{{content.con19}}</p>
+    <p class="desc">{{content.con20}}</p>
+    <p class="desc">{{content.con21}}</p>
+  </div>
+  <div *ngIf="contentId===3 && id === 0">
+    <div class="session" style="line-height: 20px;">
+      <p class="special">{{content.text1}}</p>
+      <p class="special">{{content.text2}}</p>
+    </div>
+    <img class="icon" [src]="content.imgurl1" style="margin-top: 8px;" />
+    <p class="title3 zytitle3"><span>{{content.titlep1}}</span></p>
+    <p class="desc">{{content.con1}}</p>
+    <p class="desc">{{content.con2}}</p>
+    <p class="desc">{{content.con3}}</p>
+    <p class="desc">{{content.con4}}</p>
+    <p class="title3 zytitle3"><span>{{content.titlep2}}</span></p>
+    <p class="desc">{{content.con5}}</p>
+    <p class="desc">{{content.con6}}</p>
+  </div>
+  <div *ngIf="contentId===4 && id === 0">
+    <div class="session" style="line-height: 20px;">
+      <p class="special">{{content.text1}}</p>
+    </div>
+    <h3 class="title5" style="margin-top: 15px; margin-bottom: 10px; color: rgb(255, 127, 170);">{{content.title2}}</h3>
+    <p class="desc">{{content.con1}}</p>
+    <h3 class="title5" style="margin-top: 15px; margin-bottom: 10px; color: rgb(255, 127, 170);">{{content.title3}}</h3>
+    <p class="desc">{{content.con2}}</p>
+    <p class="desc">{{content.con3}}</p>
+    <p class="desc">{{content.con4}}</p>
+  </div>
+  <div *ngIf="contentId===5 && id === 0">
+    <div class="session" style="line-height: 20px;">
+      <p class="special">{{content.text1}}</p>
+    </div>
+    <img class="icon" [src]="content.imgurl1" style="margin-top: 8px;" />
+    <h3 class="title5" style="margin-top: 15px; margin-bottom: 10px; color: rgb(255, 127, 170);">{{content.title1}}</h3>
+    <p class="desc">{{content.con1}}</p>
+    <p class="desc">{{content.con2}}</p>
+    <h3 class="title5" style="margin-top: 15px; margin-bottom: 10px; color: rgb(255, 127, 170);">{{content.title2}}</h3>
+    <p class="desc">{{content.con2}}</p>
+    <p class="desc">{{content.con3}}</p>
+    <p class="desc"><b style="color: red; font-weight: bold;">★舌麻痹：</b>{{content.con4}}</p>
+    <p class="desc"><b style="color: red; font-weight: bold;">★口唇麻痹：</b>{{content.con5}}</p>
+    <p class="desc"><b style="color: red; font-weight: bold;">★软腭麻痹：</b>{{content.con6}}</p>
+    <p class="desc"><b style="color: red; font-weight: bold;">★声带麻痹：</b>{{content.con7}}</p>
+    <img class="icon" [src]="content.imgurl2" style="margin-top: 8px;" />
+    <p class="desc">{{content.con8}}</p>
+    <p class="desc">{{content.con9}}</p>
+    <p class="desc">{{content.con10}}</p>
+  </div>
+  <div *ngIf="contentId===6 && id === 0">
+    <img class="icon" [src]="content.imgurl1" style="margin-top: 8px;" />
+    <h3 class="title2"><span>{{content.titlep}}</span></h3>
+    <p class="desc">{{content.con1}}</p>
+    <p class="desc">{{content.con2}}</p>
+    <p class="desc">{{content.con3}}</p>
+    <p class="title3 zytitle3"><span>{{content.con4}}</span></p>
+    <p class="desc">{{content.con5}}</p>
+    <p class="title3 zytitle3"><span>{{content.con6}}</span></p>
+    <p class="desc">{{content.con7}}</p>
+    <p class="title3 zytitle3"><span>{{content.con8}}</span></p>
+    <p class="desc">{{content.con9}}</p>
+    <p class="title3 zytitle3"><span>{{content.con10}}</span></p>
+    <p class="desc">{{content.con11}}</p>
+    <p class="title3 zytitle3"><span>{{content.con12}}</span></p>
+    <p class="desc">{{content.con13}}</p>
+    <p class="desc">{{content.con14}}</p>
+    <p class="desc">{{content.con15}}</p>
+    <p class="desc">{{content.con16}}</p>
+    <p class="desc">{{content.con17}}</p>
+    <p class="desc" style="text-indent: 0;"><b style="font-weight: bold;">脑卒中的早期干预：</b>{{content.con18}}</p>
+    <p class="title3 zytitle3"><span>{{content.con19}}</span></p>
+    <p class="desc">{{content.con20}}</p>
+    <p class="desc">{{content.con21}}</p>
+    <p class="title3 zytitle3"><span>{{content.con22}}</span></p>
+    <p class="desc">{{content.con23}}</p>
+    <!--<h3 class="title5" style="margin-top: 15px; margin-bottom: 10px; color: rgb(255, 127, 170);">{{content.title2}}</h3>-->
+    <!--<p class="desc">{{content.con2}}</p>-->
+
+  </div>
+  <div *ngIf="contentId===7 && id === 0">
+    <h3 class="title5" style="margin-top: 15px; margin-bottom: 10px;">{{content.title1}}</h3>
+    <p class="desc" style="text-indent: 0;"><b style="font-weight: bold">1. 仰卧位上肢被动运动：</b>{{content.con1}}</p>
+    <img class="icon" data-src="{{content.imgurl1}}" />
+    <p class="desc" style="text-indent: 0;"><b style="font-weight: bold">2. 仰卧位肘关节及小臂被动运动：</b>{{content.con2}}</p>
+    <img class="icon" data-src="{{content.imgurl2}}" />
+    <p class="desc" style="text-indent: 0;"><b style="font-weight: bold">3. 腕及手指被动运动：</b>{{content.con3}}</p>
+    <img class="icon" data-src="{{content.imgurl3}}" />
+    <h3 class="title5" style="margin-top: 15px; margin-bottom: 10px;">{{content.title2}}</h3>
+    <p class="desc" style="text-indent: 0;"><b style="font-weight: bold">1. 肩肘关节助力运动：</b>{{content.con4}}</p>
+    <img class="icon" data-src="{{content.imgurl4}}" />
+    <p class="desc" style="text-indent: 0;"><b style="font-weight: bold">2. 肘关节屈曲拮抗运动：</b>{{content.con5}}</p>
+    <img class="icon" data-src="{{content.imgurl5}}" />
+    <p class="desc" style="text-indent: 0;"><b style="font-weight: bold">3. 下臂肌张力增高助力拮抗运动：</b>{{content.con6}}</p>
+    <img class="icon" data-src="{{content.imgurl6}}" />
+    <p class="desc" style="text-indent: 0;"><b style="font-weight: bold">4. 健上肢带动患肢助力运动训练屈肘回收：</b>{{content.con62}}</p>
+    <img class="icon" data-src="{{content.imgurl62}}" />
+    <h3 class="title5" style="margin-top: 15px; margin-bottom: 10px;">{{content.title3}}</h3>
+    <p class="desc" style="text-indent: 0;"><b style="font-weight: bold">1. 床上上肢自主运动：</b>{{content.con7}}</p>
+    <img class="icon" data-src="{{content.imgurl7}}" />
+    <p class="desc" style="text-indent: 0;"><b style="font-weight: bold">2. 坐位上肢自主运动：</b>{{content.con8}}</p>
+    <img class="icon" data-src="{{content.imgurl8}}" />
+    <p class="desc" style="text-indent: 0;"><b style="font-weight: bold">3. 站位上肢自主运动：</b>{{content.con9}}</p>
+    <img class="icon" data-src="{{content.imgurl9}}" />
+    <p class="desc" style="text-indent: 0;"><b style="font-weight: bold">4. 手指自主运动瘫手的屈伸训练。</b>{{content.con10}}</p>
+    <img class="icon" data-src="{{content.imgurl10}}" />
+    <p class="desc" style="text-indent: 0;"><b style="font-weight: bold"></b>{{content.con11}}</p>
+    <img class="icon" data-src="{{content.imgurl11}}" />
+    <h3 class="title5" style="margin-top: 15px; margin-bottom: 10px;">{{content.title4}}</h3>
+    <p class="desc" style="text-indent: 0;"><b style="font-weight: bold">1. 床上髋、膝、踝关节被动运动</b>{{content.con12}}</p>
+    <img class="icon" data-src="{{content.imgurl12}}" />
+    <p class="desc" style="text-indent: 0;"><b style="font-weight: bold">2. 床边下肢垂位被动运动：</b>{{content.con13}}</p>
+    <img class="icon" data-src="{{content.imgurl13}}" />
+    <p class="desc" style="text-indent: 0;"><b style="font-weight: bold">3. 踝关节被动运动：</b>{{content.con14}}</p>
+    <img class="icon" data-src="{{content.imgurl14}}" />
+    <h3 class="title5" style="margin-top: 15px; margin-bottom: 10px;">{{content.title5}}</h3>
+    <p class="desc" style="text-indent: 0;"><b style="font-weight: bold">1. </b>{{content.con15}}</p>
+    <img class="icon" data-src="{{content.imgurl15}}" />
+    <p class="desc" style="text-indent: 0;"><b style="font-weight: bold">2. </b>{{content.con16}}</p>
+    <img class="icon" data-src="{{content.imgurl16}}" />
+    <p class="desc" style="text-indent: 0;"><b style="font-weight: bold">3. 下肢助力站立训练：</b>{{content.con17}}</p>
+    <img class="icon" data-src="{{content.imgurl17}}" />
+    <p class="desc" style="text-indent: 0;"><b style="font-weight: bold">4. </b>{{content.con18}}</p>
+    <img class="icon" data-src="{{content.imgurl18}}" />
+    <p class="desc" style="text-indent: 0;"><b style="font-weight: bold">5. </b>{{content.con19}}</p>
+    <img class="icon" data-src="{{content.imgurl19}}" />
+    <p class="desc" style="text-indent: 0;"><b style="font-weight: bold">6. </b>{{content.con20}}</p>
+    <img class="icon" data-src="{{content.imgurl20}}" />
+    <p class="desc" style="text-indent: 0;"><b style="font-weight: bold">7. </b>{{content.con21}}</p>
+    <img class="icon" data-src="{{content.imgurl21}}" />
+    <p class="desc" style="text-indent: 0;"><b style="font-weight: bold"></b>{{content.con22}}</p>
+    <img class="icon" data-src="{{content.imgurl22}}" />
+    <h3 class="title5" style="margin-top: 15px; margin-bottom: 10px;">{{content.title6}}</h3>
+    <p class="desc" style="text-indent: 0;"><b style="font-weight: bold">1.</b>{{content.con23}}</p>
+    <img class="icon" data-src="{{content.imgurl23}}" />
+    <p class="desc" style="text-indent: 0;"><b style="font-weight: bold">2. </b>{{content.con24}}</p>
+    <img class="icon" data-src="{{content.imgurl24}}" />
+    <h3 class="title5" style="margin-top: 15px; margin-bottom: 10px;">{{content.title7}}</h3>
+    <p class="desc" style="text-indent: 0;"><b style="font-weight: bold"></b>{{content.con25}}</p>
+    <img class="icon" data-src="{{content.imgurl25}}" />
+  </div>
+</div>

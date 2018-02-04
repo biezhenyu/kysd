@@ -1,0 +1,7 @@
+<div class="specialcolumn">
+  <ul class="list">
+    <li class="item" *ngFor="let item of list; let num = index;">
+      <a class="omg" [routerLink]="[routes[listindex], id, num]"><svg class="icon fl" aria-hidden="true"><use xlink:href="#icon-wenzhang"></use></svg>{{item.name}}</a>
+    </li>
+  </ul>
+</div>

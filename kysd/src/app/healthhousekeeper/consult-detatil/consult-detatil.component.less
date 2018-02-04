@@ -1,0 +1,28 @@
+@import "../../base/less/bass.less";
+.consult-detail {
+  .content, .timewrap {
+    .plr(59/2, 0);
+    .fs(16);
+    display: flex;
+    border-bottom: 1px solid @color-background-f0f0f0;
+    .desc {
+      .fx(90);
+      color: @color9;
+      text-indent: 10px;
+    }
+    .text {
+      flex: 1;
+      color: @color3;
+      .lh(20);
+    }
+  }
+  .timewrap {
+    .h(106/2);
+    .plr(0, 0);
+    align-items: center;
+    .time {
+      flex: 1;
+      color: @color3;
+    }
+  }
+}

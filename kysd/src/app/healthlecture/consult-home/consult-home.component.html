@@ -1,0 +1,29 @@
+<div class="consult">
+  <p class="consult-title chuizhi">请选择您的主要需求（多选）</p>
+  <h3 class="sort-title">常见疾病分类</h3>
+  <ul class="list">
+    <!--<li class="item" *ngFor="let item of disease; let num = index;" (click)="diseaseClick(num, $event)">{{item.diseaseName}}</li>-->
+    <li class="item fl" *ngFor="let item of disease; let num = index;">
+      <div class="wrapper {{item.stateText === '未选中' ? '' : 'wrapper-active'}}" (click)="diseaseClick(num, item)">
+        <svg class="icon" aria-hidden="true" my-svg [iconName]="diseadeSortIcon[num]">
+        </svg>
+        <span class="desc d_ib ta_c">{{item.diseaseName}}</span>
+        <span class="selectIcon d_ib"></span>
+      </div>
+    </li>
+  </ul>
+  <h3 class="sort-title">服务分类</h3>
+  <ul class="list">
+    <li class="item fl" *ngFor="let item of serves; let num = index;">
+      <div class="wrapper {{item.stateText === '未选中' ? '' : 'wrapper-active'}}" (click)="servesClick(num, item)">
+        <svg class="icon" aria-hidden="true" my-svg [iconName]="diseadeSortIcon[num]">
+        </svg>
+        <span class="desc d_ib ta_c">{{item.serviceClassName}}</span>
+        <span class="selectIcon d_ib"></span>
+      </div>
+    </li>
+  </ul>
+  <a class="btn-bottom chuizhi" (click)="next()">下一步</a>
+  <app-promit #zypromit></app-promit>
+  <app-loading #zyloading></app-loading>
+</div>

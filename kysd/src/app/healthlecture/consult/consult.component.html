@@ -1,0 +1,14 @@
+<div class="phone o_v" #phone>
+  <div class="item o_v chuizhi"><span class="fl">称呼</span><input class="fl chuizhi" [(ngModel)]="name" (ngModelChange)="checkName()" type="text"  placeholder="请输入您的称呼"><span class="error" *ngIf="nameErr">姓名错误</span></div>
+  <div class="item o_v chuizhi"><span class="fl">手机</span><input class="fl chuizhi" [(ngModel)]="phonenum" (blur)="checkPhone()" type="text"  placeholder="请输入您的手机号"><span class="error" *ngIf="!phoneErr">手机错误</span></div>
+  <div class="o_v">
+    <div class="item o_v chuizhi yanzhengma fl"><span class="fl">验证码</span><input class="fl chuizhi" [(ngModel)]="identifyingCode" type="text"  placeholder="请输入验证码"></div>
+    <span class="send fr o_v ta_c" (click)="getIdentifyingCode()">{{yanhengmaPromit}}</span>
+  </div>
+
+  <!-- 提示 -->
+  <app-promit #zypromit></app-promit>
+  <app-loading #zyloading></app-loading>
+
+  <a class="btn-bottom surebtn chuizhi" (click)="sure()">确定</a>
+</div>

@@ -1,0 +1,59 @@
+@import "../../base/less/bass.less";
+.person {
+  .plr(0, 10);
+}
+.personInfo {
+  .h(170/2);
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 1px 0px 15px 0px rgba(0, 0, 0, 0.11);
+  .b_r(5);
+  border: solid 1px rgba(210, 210, 210, 0.9);
+  opacity: 0.9;
+  .mt(15);
+  .mb(15);
+  img {
+    .w(128/2);
+    .h(128/2);
+    border-radius: 50%;
+    .ml(12);
+    .mr(10);
+  }
+  .name {
+    .fs(18);
+    color: @color0;
+  }
+}
+.arrow {
+  .w(12);
+  .h(12);
+  border-left: 1px solid #d2d2d2;
+  border-top: 1px solid #d2d2d2;
+  .p_r(10);
+  .fs(12);
+  transform: rotate(135deg);
+}
+.item {
+  .h(107/2);
+  .text {
+    .fs(16);
+    color: @color3;
+  }
+}
+.card {
+  border-top: 1px solid #d2d2d2;
+  border-bottom: 1px solid #d2d2d2;
+  .iocn {
+    .w(42/2);
+    .h(107/2);
+    background: url("10.png") no-repeat left center;
+    .b_s1(21);
+    .mr(10);
+  }
+}
+
+.consult {
+  .iocn {
+    background: url("11.png") no-repeat left center;
+    .b_s1(21);
+  }
+}

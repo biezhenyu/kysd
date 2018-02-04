@@ -1,0 +1,94 @@
+@import "../../base/less/bass.less";
+@import "../../base/less/variable.less";
+.myconsult {
+  .consult-item {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    .h(132/2);
+    border-bottom: 1px solid @color-background-f0f0f0;
+  }
+  .icon2 {
+    .fx(45);
+    .h(45);
+    background: url("9.png") left center;
+    .b_s(45, 45);
+    .ml(6);
+    .mr(8);
+  }
+  span:nth-child(2) {
+    flex: 1;
+    .h(132/2);
+    .titlename {
+      .w(270);
+      .fs(16);
+      color: @color3;
+      .mt(15);
+      .mb(17/2);
+      overflow: hidden;
+    }
+    .time {
+      .fs(12);
+      color: @color6;
+    }
+  }
+  span:nth-child(3) {
+    .fx(12);
+    .mr(10);
+    .ml(20);
+  }
+}
+.xiala {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: #ffffff;
+}
+.shangla {
+  .h(26);
+  .lh(26);
+  .fs(0);
+  display: flex;
+  .pt(10);
+  text-align: center;
+  justify-content: center;
+  div {
+    display: flex;
+    align-content: center;
+  }
+  .cricle {
+    .w(22);
+    .h(22);
+    display: inline-block;
+    animation:coin1 2.5s linear infinite;
+  }
+  .text {
+    .fs(14);
+    display: inline-block;
+    .ml(6);
+  }
+  @keyframes coin1 {
+    0% {transform: rotateZ(0deg);}
+    25% {transform: rotateZ(90deg);}
+    50% {transform: rotateZ(180deg);}
+    75% {transform: rotateZ(270deg);}
+    100% {transform: rotateZ(360deg);}
+  }
+  .icon {
+    width: 20px;
+    height: 20px;
+    fill: #727984;
+  }
+}
+.no-mess {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  color: @color9;
+  top: 50%;
+  .fs(20);
+  .mt(-10);
+}
+

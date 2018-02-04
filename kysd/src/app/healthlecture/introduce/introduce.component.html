@@ -1,0 +1,13 @@
+<app-slider [loop]="true" [autoplay]="true">
+  <div *ngFor="let item of imageurls; let num = index;">
+    <a>
+      <img class="needsclick" [src]="item">
+    </a>
+  </div>
+</app-slider>
+<h2 class="title ta_c">健康加油站</h2>
+<div class="cricle p_r o_v">
+  <div class="num"><span>{{count}}</span></div>
+  <p class="desc ta_c">目前已进行咨询人数</p>
+  <a class="btn d_ib chuizhi" routerLink="/lecture/consulthome">立即咨询</a>
+</div>

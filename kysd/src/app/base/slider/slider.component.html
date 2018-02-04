@@ -1,0 +1,10 @@
+
+<!-- 轮播图 -->
+<div class="slider" #slider>
+  <div class="slider-group" #slideGroup>
+    <ng-content></ng-content>
+  </div>
+  <div class="dots">
+      <span *ngFor="let item of dots; let num = index;" class="{{currentPageIndex === num?'active dot':'dot'}}"></span>
+  </div>
+</div>

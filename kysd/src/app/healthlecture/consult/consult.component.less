@@ -1,0 +1,51 @@
+@import "../../base/less/bass.less";
+.phone {
+  background: @color-background-f0f0f0;
+  .plr(0, 10);
+  .item {
+    .h(104/2);
+    border: 1px solid #d2d2d2;
+    .b_r(5);
+    background: @colorf;
+    .mt(10);
+    .fs(0);
+    span {
+      .w(80);
+      color: @color6;
+      text-indent: 10px;
+      .fs(15);
+    }
+    input {
+      .h(104/2);
+      .fs(15);
+    }
+    .error {
+      .fs(13);
+      color: @color-background;
+    }
+  }
+  .yanzhengma {
+    .w(492/2);
+    span {
+      .fx(80);
+    }
+    input {
+      flex: 1;
+    }
+  }
+  .send {
+    .w(200/2);
+    .fs(15);
+    .h(104/2);
+    .lh(104/2);
+    .mt(10);
+    color: @color-background;
+    border: 1px solid @color-background;
+    .b_r(5);
+    background: @colorf;
+  }
+  .surebtn {
+    left: 0;
+    justify-content: center;
+  }
+}

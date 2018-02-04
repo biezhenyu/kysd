@@ -1,0 +1,114 @@
+<div class="content" [class.resize]="static">
+  <h2 class="title">{{content.title}}</h2>
+  <div class="info">
+    <span>{{content.time}}</span><span>{{content.name}}</span><span>{{'康养速递'}}</span>
+  </div>
+  <!-- 肺心病专栏 -->
+  <div *ngIf="contentId===0">
+    <div>
+      <span style="font-size: 14px; border-top: 1px solid rgb(39, 169, 197); border-bottom: 1px solid rgb(39, 169, 197);">导语</span>
+    </div>
+    <p class="desc" style="text-indent: 0; color: #999999;">{{content.summary}}</p>
+    <h3 class="title5" style="margin-top: 15px;">{{content.title1}}</h3>
+    <p class="desc">{{content.con1}}</p>
+    <p class="desc">{{content.con2}}</p>
+    <p class="desc" style="color: rgb(20, 80, 150);">{{content.con3}}</p>
+    <p class="desc">{{content.con4}}</p>
+    <p class="desc">{{content.con5}}</p>
+    <p class="desc">{{content.con6}}</p>
+    <h3 class="title5" style="margin-top: 15px;">{{content.title2}}</h3>
+    <p class="desc" style="color: rgb(20, 80, 150); text-indent: 0;">{{content.con7}}</p>
+    <p class="desc">{{content.con9}}</p>
+    <p class="desc">{{content.con10}}</p>
+    <p class="desc">{{content.con11}}</p>
+    <p class="desc" style="color: rgb(20, 80, 150); text-indent: 0;">{{content.con12}}</p>
+    <p class="desc">{{content.con13}}</p>
+    <h3 class="title5" style="margin-top: 15px;">{{content.title3}}</h3>
+    <p class="desc" style="color: rgb(20, 80, 150); text-indent: 0;">{{content.con14}}</p>
+    <p class="desc">{{content.con15}}</p>
+    <p class="desc" style="color: rgb(20, 80, 150); text-indent: 0;">{{content.con16}}</p>
+    <p class="desc">{{content.con17}}</p>
+    <p class="desc" style="color: rgb(20, 80, 150); text-indent: 0;">{{content.con18}}</p>
+    <p class="desc">{{content.con19}}</p>
+  </div>
+  <div *ngIf="contentId===1">
+    <p class="desc" style="color: #999999;">{{content.text}}</p>
+    <img class="icon" [src]="content.imgurl" style="margin-top: 8px;" />
+    <h3 class="title5" style="margin-top: 15px; color: #00B0F0;">{{content.titlep1}}</h3>
+    <p class="desc">{{content.con1}}</p>
+    <h3 class="title5" style="margin-top: 15px; color: #00B0F0;">{{content.titlep2}}</h3>
+    <p class="desc">{{content.con2}}</p>
+    <h3 class="title5" style="margin-top: 15px; color: #00B0F0;">{{content.titlep3}}</h3>
+    <p class="desc">{{content.con3}}</p>
+    <h3 class="title5" style="margin-top: 15px; color: #00B0F0;">{{content.titlep4}}</h3>
+    <p class="desc">{{content.con4}}</p>
+    <p class="desc" style="color: #00B0F0;">{{content.con5}}</p>
+    <p class="desc">{{content.con6}}</p>
+  </div>
+  <div *ngIf="contentId===2">
+    <div class="summary" style="text-indent: 2em; line-height: 20px;">
+      <span class="summarydesc" style="text-indent: 0;">导语</span>
+      {{content.summary}}
+    </div>
+    <img class="icon" [src]="content.imgurl1" style="margin-top: 8px;" />
+    <p class="desc" style="text-indent: 0;"><b style="color: rgb(192, 0, 0); font-weight: bold;">突然剧烈胸痛或胸部憋闷</b>{{content.con1}}</p>
+    <p class="desc" style="text-indent: 0;"><b style="color: rgb(192, 0, 0); font-weight: bold;">{{content.con2}}</b></p>
+    <p class="desc" style="text-indent: 0;"><b style="color: rgb(192, 0, 0); font-weight: bold;">出现原因不明的胸背疼、肩颈胳膊疼</b>{{content.con3}}</p>
+    <p class="desc" style="text-indent: 0;"><b style="color: rgb(192, 0, 0); font-weight: bold;">胃疼 </b>{{content.con4}}</p>
+    <p class="desc" style="text-indent: 0;"><b style="color: rgb(192, 0, 0); font-weight: bold;">牙疼 </b>{{content.con5}}</p>
+    <p class="desc" style="text-indent: 0;"><b style="color: rgb(192, 0, 0); font-weight: bold;">焦虑失眠 </b>{{content.con6}}</p>
+    <p class="desc" style="text-indent: 0;"><b style="color: rgb(192, 0, 0); font-weight: bold;">心跳加剧 </b>{{content.con7}}</p>
+    <p class="desc" style="text-indent: 0;"><b style="color: rgb(192, 0, 0); font-weight: bold;">{{content.con8}}</b></p>
+    <p class="desc" style="text-indent: 0;"><b style="color: rgb(192, 0, 0); font-weight: bold;">{{content.con9}}</b></p>
+  </div>
+  <div *ngIf="contentId===3">
+    <p class="desc" style="color: #999999; text-indent: 0;">{{content.text1}}</p>
+    <img class="icon" [src]="content.imgurl1" style="margin-top: 8px;" />
+    <h3 class="title5" style="margin-top: 15px; color: #00B0F0;">{{content.titlep1}}</h3>
+    <p class="desc">{{content.con1}}</p>
+    <p class="desc">{{content.con2}}</p>
+    <h3 class="title5" style="margin-top: 15px; color: #00B0F0;">{{content.titlep2}}</h3>
+    <p class="desc">{{content.con3}}</p>
+    <img class="icon" [src]="content.imgurl2" style="margin-top: 8px;" />
+    <p class="desc">{{content.con4}}</p>
+    <p class="desc">{{content.con5}}</p>
+    <p class="desc">{{content.con6}}</p>
+    <p class="desc">{{content.con7}}</p>
+  </div>
+  <div *ngIf="contentId===4">
+    <div class="summary" style="text-indent: 2em; line-height: 20px;">
+      <span class="summarydesc" style="text-indent: 0;">心梗急救</span>
+      {{content.summary}}
+    </div>
+    <img class="icon" [src]="content.imgurl1" style="margin-top: 8px;" />
+    <h3 class="title5" style="margin-top: 15px; color: rgb(81, 143, 131);">{{content.title1}}</h3>
+    <h3 class="title2"><span style="background: rgb(81, 143, 131);">{{content.titlec1}}</span></h3>
+    <p class="desc">{{content.con1}}</p>
+    <h3 class="title2"><span style="background: rgb(81, 143, 131);">{{content.titlec2}}</span></h3>
+    <p class="desc">{{content.con2}}</p>
+    <h3 class="title2"><span style="background: rgb(81, 143, 131);">{{content.titlec3}}</span></h3>
+    <p class="desc" style="text-indent: 0;">{{content.con3}}</p>
+    <img class="icon" [src]="content.imgurl2" style="margin-top: 8px;" />
+    <p class="desc" style="color: rgb(81, 143, 131); text-indent: 0;">{{content.con4}}</p>
+    <p class="desc" style="text-indent: 0;">{{content.con5}}</p>
+    <p class="desc" style="text-indent: 0;">{{content.con6}}</p>
+    <p class="desc" style="text-indent: 0;">{{content.con7}}</p>
+    <p class="desc" style="text-indent: 0;">{{content.con8}}</p>
+  </div>
+  <div *ngIf="contentId===5">
+    <p class="desc">{{content.con1}}</p>
+    <p class="desc">{{content.con2}}</p>
+    <h3 class="title5" style="margin-top: 15px; color: #00B0F0;">{{content.title1}}</h3>
+    <h3 class="title2"><span style="background: #00B0F0;">{{content.titlec1}}</span></h3>
+    <p class="desc">{{content.con3}}</p>
+    <h3 class="title2"><span style="background: #00B0F0;">{{content.titlec2}}</span></h3>
+    <p class="desc">{{content.con4}}</p>
+    <h3 class="title2"><span style="background: #00B0F0;">{{content.titlec3}}</span></h3>
+    <p class="desc">{{content.con5}}</p>
+    <h3 class="title2"><span style="background: #00B0F0;">{{content.titlec5}}</span></h3>
+    <p class="desc">{{content.con6}}</p>
+    <h3 class="title2"><span style="background: #00B0F0;">{{content.titlec6}}</span></h3>
+    <p class="desc">{{content.con7}}</p>
+  </div>
+</div>
+

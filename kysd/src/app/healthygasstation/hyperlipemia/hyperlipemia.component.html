@@ -1,0 +1,181 @@
+
+<div class="content" [class.resize]="static">
+  <h2 class="title">{{content.title}}</h2>
+  <div class="info">
+    <span>{{content.time}}</span><span>{{content.name}}</span><span>{{'康养速递'}}</span>
+  </div>
+  <!-- 高血脂专栏 -->
+  <div *ngIf="contentId===0">
+    <p class="desc" style="text-indent: 0;">{{content.con}}</p>
+    <p class="desc" style="text-indent: 0;">{{content.con1}}</p>
+    <p class="desc" style="text-indent: 0;">{{content.con2}}</p>
+    <img class="icon" data-src="{{content.img1}}" />
+  </div>
+  <div *ngIf="contentId===1">
+    <div class="session">
+      <p class="special" style="line-height: 22px; margin-bottom: 0;">{{content.text1}}</p>
+    </div>
+    <h3 class="title5" style="margin-top: 10px;">{{content.titleP}}</h3>
+    <p class="desc">{{content.con1}}</p>
+    <p class="desc">{{content.con2}}</p>
+    <p class="desc">{{content.con3}}</p>
+    <p class="desc">{{content.con4}}</p>
+    <h3 class="title5" style="margin-top: 10px;">{{content.titleP2}}</h3>
+    <p class="desc">{{content.con5}}</p>
+    <p class="desc">{{content.con6}}</p>
+    <p class="title3 zytitle3"><span style="color: rgb(122, 68, 66);">{{content.titlec1}}</span></p>
+    <p class="desc">{{content.con7}}</p>
+    <p class="desc">{{content.con8}}</p>
+    <p class="desc">{{content.con9}}</p>
+    <p class="title3 zytitle3"><span style="color: rgb(122, 68, 66);">{{content.titlec2}}</span></p>
+    <p class="desc">{{content.con10}}</p>
+    <p class="desc">{{content.con11}}</p>
+    <p class="desc">{{content.con12}}</p>
+    <p class="desc">{{content.con13}}</p>
+    <p class="desc">{{content.con14}}</p>
+    <p class="title3 zytitle3"><span style="color: rgb(122, 68, 66);">{{content.titlec3}}</span></p>
+    <p class="desc">{{content.con15}}</p>
+    <p class="desc">{{content.con16}}</p>
+    <p class="desc">{{content.con17}}</p>
+    <p class="title3 zytitle3"><span style="color: rgb(122, 68, 66);">{{content.titlec4}}</span></p>
+    <p class="desc">{{content.con18}}</p>
+    <p class="desc">{{content.con19}}</p>
+    <p class="desc">{{content.con20}}</p>
+    <p class="title3 zytitle3"><span style="color: rgb(122, 68, 66);">{{content.titlec5}}</span></p>
+    <p class="desc">{{content.con21}}</p>
+    <p class="desc">{{content.con22}}</p>
+    <p class="desc">{{content.con23}}</p>
+    <p class="desc">{{content.con24}}</p>
+    <p class="title3 zytitle3"><span style="color: rgb(122, 68, 66);">{{content.titlec7}}</span></p>
+    <p class="desc">{{content.con25}}</p>
+    <p class="desc">{{content.con26}}</p>
+    <h3 class="title5" style="margin-top: 10px;">{{content.titleP3}}</h3>
+    <p class="desc">{{content.con27}}</p>
+  </div>
+  <div *ngIf="contentId===2">
+    <p class="desc" style="text-indent: 0;">{{content.con1}}</p>
+    <img class="icon" [src]="content.imgurl1" />
+    <p class="desc" style="text-indent: 0;">{{content.con2}}</p>
+    <img class="icon" [src]="content.imgurl2" />
+    <p class="desc" style="text-indent: 0;">{{content.con3}}</p>
+    <img class="icon" [src]="content.imgurl3" />
+    <p class="desc" style="text-indent: 0;">{{content.con4}}</p>
+  </div>
+  <div *ngIf="contentId===3">
+    <p class="title3 zytitle3"><span style="color: rgb(122, 68, 66);">{{content.title1}}</span></p>
+    <p class="desc">{{content.con1}}</p>
+    <p class="desc">{{content.con2}}</p>
+    <p class="title3 zytitle3"><span style="color: rgb(122, 68, 66);">{{content.title2}}</span></p>
+    <p class="desc">{{content.con3}}</p>
+    <p class="desc">{{content.con4}}</p>
+    <p class="desc">{{content.con5}}</p>
+    <p class="desc">{{content.con6}}</p>
+    <p class="desc">{{content.con7}}</p>
+    <p class="title3 zytitle3"><span style="color: rgb(122, 68, 66);">{{content.title3}}</span></p>
+    <p class="desc">{{content.con8}}</p>
+    <p class="desc">{{content.con9}}</p>
+    <p class="desc">{{content.con10}}</p>
+    <p class="title3 zytitle3"><span style="color: rgb(122, 68, 66);">{{content.title4}}</span></p>
+    <p class="desc">{{content.con11}}</p>
+    <p class="title3 zytitle3"><span style="color: rgb(122, 68, 66);">{{content.title5}}</span></p>
+    <p class="desc">{{content.con12}}</p>
+    <p class="desc">{{content.con13}}</p>
+    <p class="desc">{{content.con14}}</p>
+    <p class="desc">{{content.con15}}</p>
+    <p class="title3 zytitle3"><span style="color: rgb(122, 68, 66);">{{content.title6}}</span></p>
+    <p class="desc">{{content.con17}}</p>
+    <p class="title3 zytitle3"><span style="color: rgb(122, 68, 66);">{{content.title7}}</span></p>
+    <p class="desc">{{content.con18}}</p>
+  </div>
+  <div *ngIf="contentId===4">
+    <img class="icon" [src]="content.imgurl1" />
+    <div class="session">
+      <p class="special" style="line-height: 22px;">{{content.text1}}</p>
+      <p class="special" style="line-height: 22px;">{{content.text2}}</p>
+      <p class="special" style="line-height: 22px; margin-bottom: 0;">{{content.text3}}</p>
+    </div>
+    <h3 class="title5" style="margin-top: 10px; color: rgb(61, 167, 66);">{{content.title1}}</h3>
+    <p class="desc" style="text-indent: 0;">{{content.con1}}</p>
+    <img class="icon" [src]="content.imgurl2" />
+    <p class="desc" style="text-indent: 0;">{{content.con2}}</p>
+    <img class="icon" [src]="content.imgurl3" />
+    <p class="desc" style="text-indent: 0;">{{content.con3}}</p>
+    <h3 class="title5" style="margin-top: 10px; color: rgb(61, 167, 66);">{{content.title2}}</h3>
+    <p class="desc" style="text-indent: 0;">{{content.con4}}</p>
+    <p class="desc" style="text-indent: 0;">{{content.con5}}</p>
+    <img class="icon" [src]="content.imgurl4" />
+    <p class="desc" style="text-indent: 0;">{{content.con6}}</p>
+    <p class="desc" style="text-indent: 0;">{{content.con7}}</p>
+    <p class="desc" style="text-indent: 0;">{{content.con8}}</p>
+    <p class="desc" style="text-indent: 0;">{{content.con9}}</p>
+    <p class="desc" style="text-indent: 0;">{{content.con10}}</p>
+    <p class="desc" style="text-indent: 0;">{{content.con11}}</p>
+    <h3 class="title5" style="margin-top: 10px; color: rgb(61, 167, 66);">{{content.title3}}</h3>
+    <p class="desc" style="text-indent: 0;">{{content.con12}}</p>
+    <p class="desc" style="text-indent: 0;">{{content.con13}}</p>
+    <p class="desc" style="text-indent: 0;">{{content.con14}}</p>
+    <img class="icon" [src]="content.imgurl5" />
+  </div>
+  <div *ngIf="contentId===5">
+    <p class="desc" style="text-indent: 0;"><b style=" color: rgb(61, 167, 66);">方一：</b>{{content.con1}}</p>
+    <p class="desc" style="text-indent: 0;"><b style=" color: rgb(61, 167, 66);">方二：</b>{{content.con2}}</p>
+    <p class="desc" style="text-indent: 0;"><b style=" color: rgb(61, 167, 66);">方三：</b>{{content.con3}}</p>
+    <p class="desc" style="text-indent: 0;"><b style=" color: rgb(61, 167, 66);">方四：</b>{{content.con4}}</p>
+    <p class="desc" style="text-indent: 0;"><b style=" color: rgb(61, 167, 66);">方五：</b>{{content.con5}}</p>
+    <p class="desc" style="text-indent: 0;"><b style=" color: rgb(61, 167, 66);">方六：</b>{{content.con6}}</p>
+    <p class="desc" style="text-indent: 0;"><b style=" color: rgb(61, 167, 66);">方七：</b>{{content.con7}}</p>
+  </div>
+  <div *ngIf="contentId===6">
+    <h3 class="title5" style="margin-top: 15px; color: rgb(242, 100, 124);">{{content.titlep}}</h3>
+    <p class="desc" style="">{{content.con1}}</p>
+    <h3 class="title5" style="margin-top: 15px; color: rgb(242, 100, 124);">{{content.titlep2}}</h3>
+    <p class="desc" style="">{{content.con2}}</p>
+    <h3 class="title5" style="margin-top: 15px; color: rgb(242, 100, 124);">{{content.titlep3}}</h3>
+    <img class="icon" data-src="{{content.imageurl1}}" />
+    <p class="desc" style="">{{content.con3}}</p>
+    <h3 class="title5" style="margin-top: 15px; color: rgb(242, 100, 124);">{{content.titlep4}}</h3>
+    <p class="desc" style="">{{content.con4}}</p>
+    <p class="desc" style="">{{content.con5}}</p>
+    <p class="desc" style="">{{content.con6}}</p>
+    <h3 class="title5" style="margin-top: 15px; margin-bottom: 10px; color: rgb(242, 100, 124);">{{content.titlep5}}</h3>
+    <img class="icon" data-src="{{content.imageurl2}}" />
+    <h3 class="title5" style="margin-top: 15px; color: rgb(242, 100, 124);">{{content.titlep6}}</h3>
+    <p class="desc" style="">{{content.con7}}</p>
+    <p class="desc" style="">{{content.con8}}</p>
+    <p class="desc" style="">{{content.con9}}</p>
+    <p class="desc" style="">{{content.con10}}</p>
+    <p class="desc" style="">{{content.con11}}</p>
+    <p class="desc" style="">{{content.con12}}</p>
+    <p class="desc" style="">{{content.con13}}</p>
+  </div>
+  <div *ngIf="contentId===7">
+    <div class="session">
+      <p class="special" style="line-height: 22px; margin-bottom: 10px;">{{content.text1}}</p>
+      <p class="special" style="line-height: 22px; margin-bottom: 0;">{{content.text2}}</p>
+    </div>
+    <h3 class="title5" style="margin-top: 15px; color: #c00000;">{{content.title1}}</h3>
+    <p class="desc" style="">{{content.con1}}</p>
+    <p class="desc" style="">{{content.con2}}</p>
+    <p class="desc" style="">{{content.con3}}</p>
+    <p class="desc" style="">{{content.con4}}</p>
+    <p class="desc" style="">{{content.con5}}</p>
+    <h3 class="title5" style="margin-top: 15px; color: #c00000;">{{content.title2}}</h3>
+    <p class="desc" style="">{{content.con6}}</p>
+    <p class="desc" style="">{{content.con7}}</p>
+    <p class="desc" style="">{{content.con8}}</p>
+    <p class="desc" style="">{{content.con9}}</p>
+    <p class="desc" style="">{{content.con10}}</p>
+    <p class="desc" style="">{{content.con11}}</p>
+    <h3 class="title5" style="margin-top: 15px; color: #c00000;">{{content.title3}}</h3>
+    <p class="desc" style="">{{content.con12}}</p>
+    <p class="desc" style="">{{content.con13}}</p>
+    <h3 class="title5" style="margin-top: 15px; color: #c00000;">{{content.title4}}</h3>
+    <p class="desc" style="text-indent: 0;">{{content.con14}}</p>
+    <p class="desc" style="text-indent: 0;">{{content.con15}}</p>
+    <p class="desc" style="text-indent: 0;">{{content.con16}}</p>
+    <p class="desc" style="text-indent: 0;">{{content.con17}}</p>
+    <p class="desc" style="text-indent: 0;">{{content.con18}}</p>
+    <p class="desc" style="text-indent: 0;">{{content.con19}}</p>
+    <p class="desc" style="text-indent: 0;">{{content.con20}}</p>
+  </div>
+</div>

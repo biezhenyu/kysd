@@ -1,0 +1,45 @@
+@import "../less/bass.less";
+.loading {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 2000;
+  .loading-wrapper {
+    position: absolute;
+    .w(200);
+    .h(76);
+    left: 50%;
+    top: 50%;
+    .ml(-100);
+    .mt(-38);
+    .b_r(5);
+    background: #ffffff;
+    .loading-cricle {
+      .w(40);
+      .h(40);
+      .mt((76-40)/2);
+      .ml(30px);
+      .mr(16);
+      animation:coin1 2.5s linear infinite;
+    }
+    .text {
+      .h(76);
+      color: #010101;
+      .fs(16);
+      font-weight: bold;
+    }
+    @keyframes coin1 {
+      0% {transform: rotateZ(0deg);}
+      25% {transform: rotateZ(90deg);}
+      50% {transform: rotateZ(180deg);}
+      75% {transform: rotateZ(270deg);}
+      100% {transform: rotateZ(360deg);}
+    }
+  }
+  .icon {
+    fill: #727984;
+  }
+}

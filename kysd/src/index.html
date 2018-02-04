@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+  <title>康养速递</title>
+  <base href="./">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style type="text/css">
+    .icon {
+      width: 1em; height: 1em;
+      vertical-align: -0.15em;
+      fill: currentColor;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <app-root></app-root>
+
+  <!--调试插件-->
+  <!--<script src="http://mtestzhanqi.artqiyi.com/views/common/libs/vconsole.min.js "></script>-->
+  <script>
+    /*
+     * 根据屏幕宽度改变根元素字体
+     */
+    (function(doc, win) {
+      var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function() {
+          var clientWidth = docEl.clientWidth;
+          if (!clientWidth) return;
+          if (window.screen.width > 800) {
+            docEl.style.fontSize = 30 + 'px';
+          } else {
+            docEl.style.fontSize = window.screen.width / 10 + 'px';
+          }
+        };
+      if (!doc.addEventListener) return;
+      win.addEventListener(resizeEvt, recalc, false);
+      doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+  </script>
+</body>
+</html>

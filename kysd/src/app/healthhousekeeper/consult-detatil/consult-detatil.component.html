@@ -1,0 +1,21 @@
+<div class="consult-detail">
+  <div class="content">
+    <span class="desc">咨询内容</span>
+    <span class="text">{{detail ? detail['consultContent']: ''}}</span>
+  </div>
+  <div class="timewrap">
+    <span class="desc">咨询时间</span>
+    <span class="time">{{detail ? detail['createTimeStr']: ''}}</span>
+  </div>
+  <div class="timewrap">
+    <span class="desc">称呼</span>
+    <span class="time">{{detail ? detail['nickname']: ''}}</span>
+  </div>
+  <div class="timewrap">
+    <span class="desc">电话</span>
+    <span class="time">{{detail ? detail['mobile']: ''}}</span>
+  </div>
+
+  <app-promit #zypromit></app-promit>
+  <app-loading #zyloading></app-loading>
+</div>

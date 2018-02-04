@@ -1,0 +1,212 @@
+/*
+*    less的方法
+*/
+@import "./variable.less";
+.fs(@px) {
+  font-size: unit(@px / 37.5, rem);
+}
+
+/*----- 宽度 -----*/
+.w(@px) {
+  width: unit(@px / 37.5, rem);
+}
+
+/*----- 高度 -----*/
+.h(@px) {
+  height: unit(@px / 37.5, rem);
+}
+
+/*----- 行高 -----*/
+.lh(@px) {
+  line-height: unit(@px / 37.5, rem);
+}
+
+/*----- 背景尺寸 -----*/
+.b_s(@px, @px) {
+  -webkit-background-size: unit(@px / 37.5, rem) unit(@px / 37.5, rem);
+  background-size: unit(@px / 37.5, rem) unit(@px / 37.5, rem);
+}
+/**
+* [背景尺寸，设置宽度，高度auto]
+ */
+.b_s1(@px) {
+  -webkit-background-size: unit(@px / 37.5, rem) auto;
+  background-size: unit(@px / 37.5, rem) auto;
+}
+
+.b_s2(@px) {
+  -webkit-background-size: auto unit(@px / 37.5, rem);
+  background-size: auto unit(@px / 37.5, rem);
+}
+
+/*----- margin -----*/
+.mt(@px) {
+  margin-top: unit(@px / 37.5, rem);
+}
+.mr(@px) {
+  margin-right: unit(@px / 37.5, rem);
+}
+.mb(@px) {
+  margin-bottom: unit(@px / 37.5, rem);
+}
+.ml(@px) {
+  margin-left: unit(@px / 37.5, rem);
+}
+.mlr(@px, @px) {
+  margin: unit(@px / 37.5, rem) unit(@px / 37.5, rem);
+}
+.m (@px) {
+  margin: unit(@px / 37.5, rem);
+}
+
+/*----- padding -----*/
+.pt(@px) {
+  padding-top: unit(@px / 37.5, rem);
+}
+.pr(@px) {
+  padding-right: unit(@px / 37.5, rem);
+}
+.pb(@px) {
+  padding-bottom: unit(@px / 37.5, rem);
+}
+.pl(@px) {
+  padding-left: unit(@px / 37.5, rem);
+}
+.plr(@px, @px1) {
+  padding: unit(@px / 37.5, rem) unit(@px1 / 37.5, rem);
+}
+.p (@px) {
+  padding: unit(@px / 37.5, rem);
+}
+
+/*----- 定位 -----*/
+.p_t(@px) {
+  top: unit(@px / 37.5, rem);
+}
+.p_b(@px) {
+  bottom: unit(@px / 37.5, rem);
+}
+.p_l(@px) {
+  left: unit(@px / 37.5, rem);
+}
+.p_r(@px) {
+  right: unit(@px / 37.5, rem);
+}
+
+/*----- 缩进 -----*/
+.t_i(@px) {
+  text-indent: unit(@px / 37.5, rem);
+}
+
+/*----- 圆角 -----*/
+.b_r(@px) {
+  -webkit-border-radius: unit(@px / 37.5, rem);
+  -moz-border-radius: unit(@px / 37.5, rem);
+  border-radius: unit(@px / 37.5, rem);
+}
+
+/*----- flex -----*/
+.fx(@px) {
+  flex: 0 0 unit(@px / 37.5, rem);
+}
+
+/*
+*    一些常用的类
+*/
+.d_ib {
+  display: inline-block;
+}
+.db{
+  display: block;
+}
+.p_r{
+  position: relative;
+}
+.p_a{
+  position: absolute;
+}
+
+/*-----水平方式-----*/
+.ta_l{
+  text-align: left;
+}
+.ta_c{
+  text-align: center;
+}
+.ta_r{
+  text-align: right;
+}
+/*-----垂直对齐方式-----*/
+.va_t{
+  vertical-align: top;
+}
+.va_m{
+  vertical-align: middle;
+}
+.va_b{
+  vertical-align: bottom;
+}
+.t_r {
+  text-align: right;
+}
+
+/*-----浮动-----*/
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.cl{
+  clear: left;
+}
+.o_v{
+  overflow: hidden;
+}
+
+.box_s {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.omg {
+  overflow: hidden;
+  text-overflow: ellipsis ;
+  white-space: nowrap;
+}
+.chuizhi {
+  display: flex;
+  align-items: center;
+}
+dl, dd, dt {margin: 0; padding: 0; border: 0;}
+
+/*-------------------一些基础的类----------------*/
+body {
+  .fs(12);
+}
+input {
+  border: 0;
+}
+i {
+  font-weight: normal;
+}
+input:focus {
+  border: 0;
+  outline: none;
+}
+.p-cotent {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.zy-fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .7);
+}

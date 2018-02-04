@@ -1,0 +1,26 @@
+<div class="myconsult" #myconsult>
+  <ul style="padding-bottom: 30px;">
+    <li class="consult-item" *ngFor="let item of list; let num = index;" (click)="consultClick(item)">
+      <span class="icon2"></span>
+      <span class="info">
+        <b class="titlename db omg">{{item.consultContent ? item.consultContent : ''}}</b>
+        <b class="time db">{{item ? (item.createTime | date:'yyyy-MM-dd HH:mm') : ''}}</b>
+      </span>
+      <span class="arrow"></span>
+    </li>
+    <div class="shangla xiala" *ngIf="xialaShow">
+      <div>
+        <span class="cricle fl">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-tupianzhengzaijiazai"></use>
+          </svg>
+        </span>
+        <b class="text">正在加载...</b>
+      </div>
+    </div>
+  </ul>
+  <div class="no-mess" *ngIf="list.length === 0">暂无咨询数据!</div>
+
+  <app-promit #zypromit></app-promit>
+  <app-loading #zyloading></app-loading>
+</div>

@@ -1,0 +1,15 @@
+<div class="person" routerLink="/housekeeper/dtail">
+  <div class="personInfo o_v chuizhi p_r">
+    <img class="fl" [src]="defaultIcon" alt="" />
+    <span class="name fl">{{userInfo ? userInfo.basicInfo.nickname : ''}}</span>
+    <span class="arrow p_a"></span>
+  </div>
+  <div class="card consult item o_v chuizhi p_r o_v" routerLink="/housekeeper/myconsult">
+    <span class="iocn fl"></span>
+    <span class="text">我的咨询</span>
+    <span class="arrow p_a"></span>
+  </div>
+
+  <app-promit #zypromit></app-promit>
+  <app-loading #zyloading></app-loading>
+</div>

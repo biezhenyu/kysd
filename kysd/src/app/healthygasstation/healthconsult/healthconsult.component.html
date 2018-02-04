@@ -1,0 +1,13 @@
+<div class="healthconsult">
+  <ul class="o_v">
+    <li class="item fl" *ngFor="let item of healthList; let num = index;">
+      <a [routerLink]="['/gasstation/specialcolumn', num]">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-xinnaoxieguan"></use>
+        </svg>
+        <span class="desc d_ib ta_c">{{item.sort}}</span>
+      </a>
+    </li>
+  </ul>
+</div>
+

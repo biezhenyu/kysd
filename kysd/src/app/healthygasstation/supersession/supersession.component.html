@@ -1,0 +1,30 @@
+<div class="content" [class.resize]="static">
+  <h2 class="title">{{content.title}}</h2>
+  <div class="info">
+    <span>{{content.time}}</span><span>{{content.name}}</span><span>{{'康养速递'}}</span>
+  </div>
+  <!-- 肺心病专栏 -->
+  <div *ngIf="contentId===0">
+    <div class="summary" style="text-indent: 2em; line-height: 20px;">
+      <span class="summarydesc" style="text-indent: 0;">摘要</span>
+      {{content.summary}}
+    </div>
+    <img class="icon" [src]="content.imgurl" style="margin-top: 8px;" />
+    <p class="desc" style=""><b style="color: rgb(172, 29, 16);">№.1→看得到：</b>{{content.con1}}</p>
+    <p class="desc" style=""><b style="color: rgb(172, 29, 16);">№.2→感受得到：</b>{{content.con2}}</p>
+    <p class="desc" style=""><b style="color: rgb(172, 29, 16);">№.3→检测的到：</b>{{content.con3}}</p>
+  </div>
+  <div *ngIf="contentId===1">
+    <h3 class="title2"><span style="background: rgb(81, 143, 131);">{{content.title1}}</span></h3>
+    <div style="padding: 2px; border: 1px solid #d2d2d2; margin-top: 10px;">
+      <p class="desc"><b style="font-weight: bold;">简介：</b>{{content.con1}}</p>
+      <p class="desc"><b style="font-weight: bold;">疾病特点：</b>{{content.con2}}</p>
+    </div>
+    <h3 class="title2"><span style="background: rgb(81, 143, 131);">{{content.title2}}</span></h3>
+    <div style="padding: 2px; border: 1px solid #d2d2d2; margin-top: 10px;">
+      <p class="desc"><b style="font-weight: bold;">简介：</b>{{content.con1}}</p>
+      <p class="desc"><b style="font-weight: bold;">疾病特点：</b>{{content.con2}}</p>
+    </div>
+  </div>
+
+</div>

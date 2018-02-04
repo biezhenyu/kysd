@@ -1,0 +1,64 @@
+@import "../../base/less/bass.less";
+.slider-item {
+  float: left;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+}
+.slider-item a {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  text-decoration: none;
+}
+.slider-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.title {
+  .fs(24);
+  .mt(83/2);
+  .mb(99/2);
+  font-family: PingFang-SC-Regular;
+  font-weight: normal;
+  color: #333333;
+}
+.cricle {
+  .w(522/2);
+  .h(522/2);
+  left: 50%;
+  .ml(-((522/2)/2));
+  background: url("1.png") no-repeat top center;
+  background-size: 100% auto;
+  .num {
+    display: flex;
+    justify-content: center;
+    .h(45);
+    .fs(50);
+    color: @color0;
+    .mt(160/2);
+    span {
+      background: url("2.png") no-repeat left bottom;
+      .b_s(20, 20);
+      .pl(26);
+    }
+  }
+  .desc {
+    color: @color9;
+    .fs(15);
+    .mt(5);
+  }
+  .btn {
+    .w(325/2);
+    .h(94/2);
+    .b_r(46/2);
+    justify-content: center;
+    background-image: linear-gradient(74deg, #ff7e00 8%, #fb9939 64%, #f6b372 100%), linear-gradient(#ffffff, #ffffff);
+    color: @colorf;
+    .fs(16);
+    .ml(99/2);
+    .mt(112/2);
+  }
+}
